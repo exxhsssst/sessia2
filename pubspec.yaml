@@ -33,9 +33,17 @@ dependencies:
 
 
 
-  cupertino_icons: ^1.0.2
+  cupertino_icons: ^1.0.8
   line_awesome_flutter: ^2.0.0
   flutter_native_splash: ^2.3.6
+  bloc: ^8.1.4
+  dio: ^5.4.3+1
+  retrofit: ^4.1.0
+  qr_code_scanner: ^1.0.1
+  google_maps_flutter: ^2.6.1
+  location: ^6.0.1
+  flutter_bloc: ^8.1.5
+  flutter_polyline_points: ^2.0.0
 
 
 
@@ -43,6 +51,9 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  flutter_launcher_icons: ^0.13.1
+  build_runner: ^2.4.7
+  retrofit_generator: ^8.1.0
 
 
 

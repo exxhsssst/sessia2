@@ -7,9 +7,11 @@ import 'package:login_flutter_app/src/features/core/screens/dashboard/widgets/ba
 import 'package:login_flutter_app/src/features/core/screens/dashboard/widgets/categories.dart';
 import 'package:login_flutter_app/src/features/core/screens/dashboard/widgets/search.dart';
 import 'package:login_flutter_app/src/features/core/screens/dashboard/widgets/top_courses.dart';
+import 'package:login_flutter_app/src/features/core/screens/google.dart';
+import 'package:login_flutter_app/src/features/core/screens/qrscan.dart';
 
 class Dashboard extends StatelessWidget {
-  const Dashboard({super.key});
+  const Dashboard({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -23,17 +25,51 @@ class Dashboard extends StatelessWidget {
         
         drawer: Drawer(
           child: ListView(
-            children: const [
+            children:  [
               UserAccountsDrawerHeader(
                 currentAccountPicture: Image(image: AssetImage(tLogoImage)),
                 currentAccountPictureSize: Size(100, 100),
                 accountName: Text('Макдон'),
                 accountEmail: Text('sessia@uib.kz'),
               ),
-              ListTile(leading: Icon(Icons.home), title: Text('Домой')),
-              ListTile(leading: Icon(Icons.verified_user), title: Text('Профиль')),
-              ListTile(leading: Icon(Icons.shopping_bag), title: Text('История')),
-              ListTile(leading: Icon(Icons.favorite), title: Text('Избранные')),
+              ListTile(
+                leading: Icon(Icons.home),
+                title: Text('Домой'),
+                onTap: () {
+                  // Навигация на страницу QRScanPage при нажатии на "Домой"
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => QRScanPage()),
+                  );
+                },
+              ),
+              ListTile(
+                leading: Icon(Icons.verified_user),
+                title: Text('Профиль'),
+                onTap: () {
+                  // Навигация на страницу MapPage при нажатии на "Профиль"
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => MapPage()),
+                  );
+                },
+              ),
+              ListTile(
+                leading: Icon(Icons.shopping_bag),
+                title: Text('История'),
+                onTap: () {
+                  // Обработка нажатия на "История"
+                  // Например, навигация на страницу с историей
+                },
+              ),
+              ListTile(
+                leading: Icon(Icons.favorite),
+                title: Text('Избранные'),
+                onTap: () {
+                  // Обработка нажатия на "Избранные"
+                  // Например, навигация на страницу с избранным контентом
+                },
+              ),
             ],
           ),
         ),
