@@ -1,0 +1,67 @@
+name: login_flutter_app
+description: A new Flutter project.
+publish_to: 'none'
+version: 1.0.0+1
+
+
+environment:
+  sdk: '>=3.2.0 <4.0.0'
+
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_lints: ^3.0.1
+  google_fonts: ^6.1.0
+
+  
+  get: ^4.6.6
+
+  
+  liquid_swipe: ^3.0.0
+  smooth_page_indicator: ^1.0.0+2
+
+  
+  flutter_otp_text_field: ^1.1.1
+
+
+  firebase_core: ^2.24.0
+  firebase_auth: ^4.15.0
+  cloud_firestore: ^4.13.3
+  flutter_facebook_auth: ^6.0.3
+  google_sign_in: ^6.1.6
+
+
+
+  cupertino_icons: ^1.0.2
+  line_awesome_flutter: ^2.0.0
+  flutter_native_splash: ^2.3.6
+
+
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/logo/
+    - assets/images/
+    - assets/images/profile/profile-pic.png
+    - assets/images/profile/logo.png
+    - assets/images/dashboard/
+    - assets/images/dashboard/dash-04.png
+    - assets/images/dashboard/dash-01.png
+    - assets/images/dashboard/dash-02.png
+    - assets/images/dashboard/dash-03.png
+    - assets/images/splash_images/splash-screen-image.png
+    - assets/images/welcome_images/welcome-screen-image.png
+    - assets/images/forget_password/
+    - assets/images/on_boarding_images/on-boarding-image-1.png
+    - assets/images/on_boarding_images/on-boarding-image-2.png
+    - assets/images/on_boarding_images/on-boarding-image-3.png
+
